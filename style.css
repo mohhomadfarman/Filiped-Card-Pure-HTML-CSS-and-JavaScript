@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease;
+}
+.section-One
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.card-items-wrapper{
+    /* background-image: url('/img/card.png'); */
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+    /* transform: rotateY(180deg); */
+}
+.card-items-wrapper
+{
+    display: block;
+    position: relative;
+    width: 360px; /* pixel is not responive replace it into percentage as you want to make it more responsive*/
+    height: auto;
+    
+    border-radius: 29px;
+    transition: all 0.3s ease;
+}
+.card-items-wrapper img{
+    width: 100%;
+}
+.d-flex
+{
+    display: flex;
+}
+.card-bg
+{
+    position: absolute;
+    top: 0;
+    padding: 30px;
+}
+.card-bg h3
+{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.card-bg p{
+    margin-top: 16px;
+    color: #FFF;
+font-size: 17.4px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.icons-plus
+{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 35px !important;
+    height: 35px !important;
+}
+.fillter-whit
+{
+    position: relative;
+}
+.fillter-white::before
+{
+    position: absolute;
+    content: '';
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    border-radius: 27px;
+}
+.card-bg-fliped
+{
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    z-index: 99;
+}
+.card-bg-fliped h3
+{
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+background: linear-gradient(93deg, #81D3C0 0%, #B8E33A 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+margin-bottom: 33px;
+}
+.top-0{
+    position: absolute !important;
+    /* top: 0 !important; */
+    transform: rotateY(180deg);
+}
+.sum.icons-plus
+{
+    z-index: 9999;
+    
+}
